@@ -19,15 +19,14 @@ type CharacterProps = {
 
 const Character: FC<CharacterProps> = ({ character: { id, name, image } }) => {
   return (
-    <div
-      style={{ display: "flex", border: "1px solid #000", margin: "1rem 0" }}
-    >
-      <div>
-        <p>Character id: {id}</p>
+    <>
+      <section>
+        <div>
+        <img src={image} alt={name} />
         <h4>{name}</h4>
-      </div>
-      <img src={image} alt={name} />
-    </div>
+        </div>
+      </section>
+    </>
   );
 };
 
