@@ -1,19 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+:root{
+  --color-primary: #fff;
+}
+
 .App{
   margin: 0;
   padding: 0;
-  display: flex;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-primary);
 }
 
 main{
+  position: relative;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(img/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
   h2{
-    background-color: aqua;
     font-size: 2rem;
-    text-align: center;
+    color: var(--color-primary);
+  }
+}
+
+#contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  padding: 2rem 3rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+#tarjeta{
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  border: 5px solid #ffffff00;
+  border-radius: 10%;
+  background-color: #5c5c5c15;
+
+  img{
+    border-radius: 10%;
   }
 
-  div{
-    padding: 0.5rem;
+  h4{
+    font-size: 1.3rem;
+    color: var(--color-primary);
   }
 }

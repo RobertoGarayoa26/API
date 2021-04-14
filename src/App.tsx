@@ -19,14 +19,12 @@ type CharacterProps = {
 
 const Character: FC<CharacterProps> = ({ character: { id, name, image } }) => {
   return (
-    <>
-      <section>
-        <div>
+    <section id="contenedor">
+        <div id="tarjeta">
         <img src={image} alt={name} />
         <h4>{name}</h4>
         </div>
-      </section>
-    </>
+    </section>    
   );
 };
 
@@ -41,7 +39,6 @@ const App: FC = () => {
 
       setCharacters(results);
     };
-    console.log("useeffe");
 
     getCharacters();
   }, []);
